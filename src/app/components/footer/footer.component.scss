@@ -1,0 +1,103 @@
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right bottom,  rgba(0, 0, 0, 0.644), rgba(235, 104, 29, 0.63)), url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+
+
+    .top-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: .8rem 5rem;
+        gap: 2rem;
+
+
+        .logo-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            .footer-social-links {
+                display: flex;
+
+                div {
+                    width: 36px;
+                    height: 36px;
+                    border: 1px solid grey;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                    margin: .2rem;
+                    cursor: pointer;
+                    transition: all ease .3s;
+
+                    &:hover {
+                        border: none;
+                        background-color: #f87000a6;
+                        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+                    }
+                }
+               
+            }
+        }
+
+        .footer-links {
+            .wrapper {               
+
+                ul {
+                    padding-left: 0;
+
+                    li {
+                        list-style: none;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+
+
+        .newsletter-wrapper {
+            .input-wrapper {
+                display: flex;
+                align-items: center;
+                background-color: whitesmoke;
+                width: 300px;
+                padding: .2rem;
+                
+
+                input {
+                    border: none;
+                }
+
+                svg {
+                    color: black;
+                }
+            }
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+        }        
+
+    }
+
+
+    .bottom-wrapper {
+        padding: .2rem 5rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {   
+    body {
+        background-color: red;
+    }
+  }
