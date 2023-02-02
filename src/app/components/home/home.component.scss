@@ -16,7 +16,7 @@
 
             img {
                 width: 100%;
-                margin-bottom: 20%;
+                margin-bottom: 10%;
                 
             }
         }
@@ -45,8 +45,20 @@
             .btn {
                 background-color: #0E3854;
                 color: azure;
-            }
-            
-        }
-    
+            }            
+        }    
 }
+
+
+
+@media screen and (min-width: 990px) {
+    .home {
+        flex-direction: row;
+        padding: 0 3rem;
+
+        .info {
+            text-align: left;
+        }
+    }
+   
+  }

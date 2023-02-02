@@ -117,8 +117,13 @@
                     font-weight: 600;
                 }
 
+                p {
+                    margin-bottom: 5px;
+                }
+
                 small {
                     color: grey;
+                    font-size: small;
                 }
             }
         }
@@ -191,3 +196,47 @@
         }    
     }
 }
+
+
+@media screen and (min-width: 990px) {
+    .team {
+
+        .banner {
+            height: 350px;
+            padding: 4rem 10rem;
+
+            h3 {
+                font-size: 38px;
+            }
+        }
+
+
+        .info {
+            padding: 1rem 10rem;
+
+            h2 {
+                font-weight: 700;
+                font-size: 38px;
+            }
+
+            small {
+                font-size: 22px;
+            }
+        }
+
+        .team-grid {
+            padding: 0 10rem;
+            margin-top: 2rem;
+
+            #vertical {
+                height: 300px;
+            }
+
+            #top {
+                height: 300px;
+            }
+        }
+
+    }
+   
+  } 
