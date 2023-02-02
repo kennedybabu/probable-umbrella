@@ -30,6 +30,7 @@
             text-align: center;
 
             h4 {
+                font-weight: 600;
 
                 span {
                     color: #FF7C1F;
@@ -37,10 +38,13 @@
                 }
             }
 
+            p {
+                color: grey;
+            }
+
             .btn {
                 background-color: #0E3854;
-                color: azure
-                ;
+                color: azure;
             }
             
         }
