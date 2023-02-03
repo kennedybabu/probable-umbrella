@@ -1,6 +1,11 @@
 nav {
-    padding: 1rem 1rem;
+    padding: 1rem 0;
     height: 90px;
+
+    #navbarSupportedContent {
+        z-index: 20;
+        background-color: white;
+    }
 
     .navbar-brand {
         font-weight: 700;
