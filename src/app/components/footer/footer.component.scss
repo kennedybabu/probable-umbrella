@@ -105,16 +105,16 @@
 
 
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 768px) {
     .footer {
         .top-wrapper {
             grid-template-columns: repeat(2, 1fr);
-            padding: 1rem 10rem;
+            padding: 1rem 6rem;
         }
 
         .bottom-wrapper {
-            padding: 1rem 10rem;
+            padding: 1rem 6rem;
         }
     }
    
-  }
+}

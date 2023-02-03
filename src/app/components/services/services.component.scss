@@ -53,18 +53,22 @@
 
             .icon {
                 display: flex;
-                align-items: flex-start;
+                align-items: center;
+                justify-content: center;
                 width: 100%;
                 
                 svg {
                     height: 30px;
                     width: 30px;
                     margin-top: 10px;
+
                 }
             }
 
 
             .text {
+                text-align: center;
+
                 h3 {
                     font-weight: 600;
                     font-size: 20px;
@@ -81,16 +85,82 @@
 }
 
 
+@media screen and (min-width: 414px) {
+    
+    .services {
+        
+            .info {
+                h4 {
+                    font-size: 28px;
+                }
+            }
+
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+
+            .card {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .services {
+        
+        .info {
+
+            h4 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 24px;
+                color: rgb(83, 83, 83);
+            }
+        }
+
+        .cards {
+            .card {
+                width: 300px;
+                height: 300px;
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    
+                    svg {
+                        height: 50px;
+                        width: 50px;    
+                    }
+                }
+
+
+                .text {
+
+                    h3 {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 @media screen and (min-width: 990px) {
 
     .services {
 
-        .cards {
-            
+        .cards {            
             grid-template-columns: repeat(2, 1fr);
             display: grid;
-            padding: 0 12rem;
+            padding: 0 8rem;
 
             .card {
                 width: 300px;
@@ -120,7 +190,6 @@
                         font-size: 18px;
                     }
                 }
-
 
             }
         }

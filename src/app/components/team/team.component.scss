@@ -1,5 +1,5 @@
 .team {
-    min-height: 100vh;
+    height: auto;
     width: 100%;
 
 
@@ -14,17 +14,13 @@
         h3 {
             font-weight: 700;
             color: aliceblue;
-
-            span {
-            }
-
         }      
 
     }
 
     .info {
         padding: 2rem 2rem;
-        margin-top: 3rem;
+        margin-top: 1rem;
 
         h2 {
             font-weight: 600;
@@ -55,7 +51,6 @@
         }
 
         #vertical {           
-            // background-color: red;
             display: grid;
             grid-template-columns: repeat(2, 1fr);            
             grid-gap: 1rem;
@@ -199,6 +194,26 @@
 }
 
 
+@media screen and (min-width: 650px) {
+
+    .team {
+        .team-grid {
+            padding: 0 2rem;
+
+            #vertical {
+                height: 250px;
+            }
+
+            #top {
+                height: 250px;
+            }
+        }
+    }
+}
+
+
+
+
 @media screen and (min-width: 990px) {
     .team {
 
@@ -240,4 +255,31 @@
 
     }
    
-  } 
+} 
+
+
+@media screen and (min-width: 768px) {
+    .team {
+        height: auto;
+
+        .info {
+            padding: 1rem 100px;
+        }
+
+        .team-grid {
+            padding: 0 100px;
+
+
+            #vertical {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+
+            #top {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
